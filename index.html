@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    
+    <!-- Enlazamos el link de bootstrap, esto ayuda a crear estilos sin necesidad de descargar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Ejercicio con Bootstrap</title> 
+</head>
+<!-- Usamos las clases que arroja bootstrap -->
+<body class="bg-light"> 
+
+    <div class="container mt-5"> 
+        <div class="card shadow p-4"> 
+            <h2 class="text-center mb-4">Calcula tu edad</h2> 
+
+            <!-- Campo para ingresar el año de nacimiento -->
+            <div class="mb-3"> <!-- Espaciado inferior para separar los elementos -->
+                <label for="añoNacimiento" class="form-label">Año de nacimiento</label> 
+                <input type="text" id="añoNacimiento" class="form-control" placeholder="Ejemplo: 2000"> 
+            </div>
+
+            <!-- Campo para ingresar el año actual -->
+            <div class="mb-3">
+                <label for="añoActual" class="form-label">Año actual</label> 
+                <input type="text" id="añoActual" class="form-control" placeholder="Ejemplo: 2025"> 
+            </div>
+
+            <!-- Botón para calcular la edad -->
+            <button class="btn btn-primary w-100" onclick="calcularEdad()">Calcular Edad</button> 
+
+
+            <!-- Párrafo donde se mostrará el resultado -->
+            <p id="resultadoEdad" class="mt-3 text-center fw-bold"></p> 
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+
+    <!-- Script de Bootstrap para funcionalidades avanzadas como botones interactivos y modales (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
